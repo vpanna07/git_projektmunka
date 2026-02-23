@@ -1,4 +1,6 @@
-nav {background-color: #0a3c86;
+
+nav {
+    background-color: #0a3c86;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -7,34 +9,84 @@ nav {background-color: #0a3c86;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-variant: small-caps;
     box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
- }
- nav ul {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     display: flex;
-     justify-content: space-around;
-     position: relative;
- }
- nav ul li{
-     color:white;
-     text-decoration: none;
-     padding-left: 20px;
-     padding-right: 20px;
- }
-
- nav ul li:hover{
-     border: 1px dotted grey;
- } 
- h1 {text-align: center;
-    color: white;}
-.alul {text-align: left;
-    color: aliceblue;}
-body{background-color: rgb(63, 142, 184);}
-a{list-style-type: none;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+  
+  
+  nav ul li {
+    margin: 0;
+    padding: 0 !important;                     
+    background: transparent !important;        
+    border: 0;                                  
+  }
+  
+  
+  nav ul li > a {
+    display: inline-block;
+    padding: 10px 20px;                        
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;                           
+    background: transparent !important;       
+    font-weight: 700;
+  }
+  
+  
+  nav ul li > a:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+  }
+  
+  
+  nav ul li > a.active {
+    background: #ffffff !important;            
+    color: #0a3c86 !important;                 
+  }
+  
+  
+  nav ul li > a:not(.active) {
+    background: transparent !important;
+    color: #ffffff !important;
+  }
+  
+  
+  h1 {
+    text-align: center;
     color: white;
-    text-decoration: none;}
-
-
-
+  }
+  
+  .alul {
+    text-align: left;
+    color: aliceblue;
+  }
+  
+  body {
+    background-color: rgb(63, 142, 184);
+  }
+  
+  
+  a {
+    color: white;
+    text-decoration: none;
+    background: none !important;              
+  }
+  .kep{
+    width: 670px;
+    border:rgba(0, 0, 0, 0.4);
+    border-radius: 67px;
+    margin-left: 600px;
+    margin-right: 300px;
     
+  }
+  .alapszoveg{
+    font-size: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
